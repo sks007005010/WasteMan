@@ -1,0 +1,275 @@
+<html>
+
+<head>
+	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+	<div id="response"></div>
+
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+.navi
+{
+    overflow: hidden;
+  background-color:indianred;
+  background-size:40px;
+}
+.navi a
+{
+	float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  }
+  .navi a:hover 
+  {
+  background-color:gray;
+
+  color: black;
+}
+.button {
+  background-color:#ffd11a;
+  border: none;
+  color: dodgerblue;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+  
+h1
+{
+border-style:solid;
+border-width:1px;
+text-align:center;
+color:black;
+}
+.container{
+    display: flex;
+}
+
+.space
+{
+    margin-left:20px;
+}
+.bar-graph {
+  padding: 0;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 425px;
+  margin: 0;
+color:red;
+}
+
+.bar-graph li {
+  display: block;
+  padding: 1.5625rem 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+  border-radius: 4px 4px 0 0;
+  max-width: 20%;
+  height: 100%;
+
+  margin: 0 1.8% 0 0;
+  -webkit-flex: 1 1 15%;
+      -ms-flex: 1 1 15%;
+          flex: 1 1 15%;
+}
+
+.bar-graph .bar-graph-axis {
+  -webkit-flex: 1 1 8%;
+      -ms-flex: 1 1 8%;
+          flex: 1 1 8%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+		
+}
+
+.bar-graph .bar-graph-label {
+  margin: 0;
+  background-color: none;
+  color: #8a8a8a;
+  position: relative;
+}
+
+@media print, screen and (min-width: 40em) {
+  .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px dashed #8a8a8a;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 20%;
+  }
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 64em) {
+  .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+    width: 30%;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .bar-graph .bar-graph-label:after {
+    left: auto;
+    right: 0;
+  }
+}
+
+.bar-graph .percent {
+  letter-spacing: -3px;
+  opacity: 0.4;
+  width: 100%;
+  font-size: 1.875rem;
+  background-color:red;
+  position: absolute;
+}
+
+@media print, screen and (min-width: 40em) {
+  .bar-graph .percent {
+    font-size: 3.875rem;
+  }
+}
+
+.bar-graph .percent span {
+  font-size: 1.875rem;
+}
+
+.bar-graph .description {
+  font-weight: 800;
+  opacity: 0.5;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 14px;
+  bottom: 20px;
+  position: absolute;
+  font-size: 1rem;
+  overflow: hidden;
+	
+}
+
+.bar-graph .bar.primary {
+  border: 1px solid #1779ba;
+  background: linear-gradient(#2196e3, #1779ba 70%);
+}
+
+.bar-graph .bar.secondary {
+  border: 1px solid #767676;
+  background: linear-gradient(#909090, #767676 70%);
+}
+
+.bar-graph .bar.success {
+  border: 1px solid #3adb76;
+  background: linear-gradient(#65e394, #3adb76 70%);
+}
+
+.bar-graph .bar.warning {
+  border: 1px solid #ffae00;
+  background: linear-gradient(#ffbe33, #ffae00 70%);
+}
+
+.bar-graph .bar.alert {
+  border: 1px solid #cc4b37;
+  background: linear-gradient(#d67060, #cc4b37 70%);
+}
+</style>
+
+  <script>
+document.getElementById("x").innerHTML="hi";
+  </script>
+<body class = "body" >
+
+<div>
+ <b> <h1 align="center"><img src="static/images/logo.PNG" height="45px" width="50px;" />&nbsp;&nbsp; SMART WASTE MANAGEMENT</h1></b>
+  </div>
+  
+  <div class="navi">
+      <a href="http://127.0.0.1:5001/home"><span class="glyphicon glyphicon-home" ></span> HOME</a>
+  	    <a href="http://127.0.0.1:5001/map"><img src="static/images/drytruck.PNG" height="23px" width="40px" />&nbsp;DRY WASTE</a>
+      <a href="http://127.0.0.1:5001/map1"><img src="static/images/wettruck.PNG" height="23px" width="40px"/>&nbsp;WET WASTE</a>
+    
+   </div>
+
+
+	<center>
+		
+	<br/>
+	<br/>
+		<ul class="bar-graph" style="height:300px; width:400px;  ">
+			
+			&nbsp;&nbsp;	<li class="bar "   style="height:{{waste_per[0]}}%; background-color:green;" title="{{waste_per[0]}}"  >
+					<h2><div > {{waste_per[0]}}<span>%</span></div></h2>
+				
+					
+					
+				<li class="bar "  style="height:{{waste_per[1]}}%; background-color:green;" title="{{waste_per[1]}}">
+				<h2>	<div >{{waste_per[1]}}<span>%</span></div></h2>
+				
+					
+				
+				<li class="bar " style="height:{{waste_per[2]}}%;background-color:green;" title="{{waste_per[2]}}">
+					<h2><div>{{waste_per[2]}}<span>%</span></div></h2>
+				
+					
+					
+				<li class="bar "  style="height:{{waste_per[3]}}%; background-color:green;" title="{{waste_per[3]}}">
+					<h2><div >{{waste_per[3]}}<span>%</span></div></h2>
+				
+	
+					
+				<li class="bar"  style="height:{{waste_per[4]}}%;background-color:green;" title="{{waste_per[4]}}">
+					<h2><div >{{waste_per[4]}}<span>%</span></div></h2>
+				
+					
+				
+				<li class="bar" style="height:{{waste_per[5]}}%; background-color:green;" title="{{waste_per[5]}}">
+					<h2><div >{{waste_per[5]}}<span>%</span></div></h2>
+				
+					
+					
+					
+				
+	
+
+	</ul>
+	</div>
+<br/>
+	<br/>
+	<br/>
+	<button class="button btn "><a href="/mylink1">{{name[0]}}</a></button>  &nbsp;  <button class="button btn"><a href="/mylink2">{{name[1]}}</a></button>&nbsp; 	<button class="button btn"><a href="/mylink3">{{name[2]}}</a></button>&nbsp; 	<button class="button btn"><a href="/mylink4">{{name[3]}}</a></button>	&nbsp;	<button class="button btn"><a href="/mylink5">{{name[4]}}</a></button>		<button class="button btn"><a href="/mylink6">{{name[5]}}</a></button>&nbsp;
+		
+
+	</center>
+	
+	
+	
+	
+	</body>
+</html>
